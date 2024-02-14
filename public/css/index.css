@@ -1,0 +1,60 @@
+/*======================================*/
+/*======      Navigation bar      ======*/
+/*======================================*/
+/* Navigation fixed to topmost position */
+.nav-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background-color: whitesmoke;
+    z-index: 2;
+}
+
+.nav-container table{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.nav-container td{
+    /*border: 1px solid black;  uncomment to see td border*/
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.nav-container a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+
+.nav-container a:first-child{
+    margin-right: 200px;
+}
+
+/*======================================*/
+/*======          Body            ======*/
+/*======================================*/
+
+.about-container, .contact-container, footer{
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.spacer{
+    padding-top: 40%;  
+}
+
+html {
+    overflow-y: scroll;
+}
+body{margin: 0;}

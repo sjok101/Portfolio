@@ -26,7 +26,7 @@ app.get("/", function (req, res) {
 //--------------------------------------//
 
 // Start the server to listen on port 80
-const port = process.env.PORT || 80; // Use the environment port or port 80 as default
+const port = 80;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });

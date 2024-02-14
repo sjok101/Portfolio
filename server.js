@@ -25,8 +25,8 @@ app.get("/", function (req, res) {
 
 //--------------------------------------//
 
-// Start the server to listen on port 80
-const port = 80;
+// Start the server to listen on port 3000
+const port = 3000;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });

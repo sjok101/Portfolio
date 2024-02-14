@@ -1,13 +1,12 @@
 var express = require("express");
-
 const mongoose = require("mongoose");
+var bodyParser = require("body-parser");
+var path = require("path");
+
+var app = express();
 
 const db = mongoose.connection;
 //add further logic for mongoose connection
-
-var bodyParser = require("body-parser");
-var app = express();
-var path = require("path");
 
 //initialize view engine
 app.set("view engine", "ejs");
@@ -26,6 +25,8 @@ app.get("/", function (req, res) {
 
 //--------------------------------------//
 
-app.listen(8080, () => {
-  console.log("Server is running on port 8080");
+// Start the server to listen on port 80
+const port = process.env.PORT || 80; // Use the environment port or port 80 as default
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });

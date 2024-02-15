@@ -37,9 +37,12 @@
     margin-right: 200px;
 }
 
+
+
 /*======================================*/
 /*======          Body            ======*/
 /*======================================*/
+
 
 .main-section, footer{
     width: 100%;
@@ -52,17 +55,25 @@
     padding-bottom: 10vh;
 }
 
-.projects-container figure{
-    display:flex;
+.project-image ,.welcome-image{
+    display:inline-block;
     margin: auto;
+    padding: 15px;
 }
 
-#project-1-div{
-    padding-right:100px;
-}
 .spacer{
-    background-image: url(../img/cs-logo.png), url(../img/banner1.jpg);
-    padding-top: 35%;  
+    background-image: url(../img/pngegg.png), linear-gradient(to right, rgb(37, 37, 37), rgba(74, 0, 0, 0.494));
+    padding: 10vh;
+}
+
+.welcome-container{
+    text-align: center;
+    position: relative;
+    margin: auto;
+    width: 85%;
+    height: 50vh;
+    border: 1px solid black;
+    background-color: aliceblue;
 }
 
 html {

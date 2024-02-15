@@ -41,7 +41,7 @@
 /*======          Body            ======*/
 /*======================================*/
 
-.about-container, .contact-container, footer{
+.main-section, footer{
     width: 100%;
     background-color: whitesmoke;
     display: flex;

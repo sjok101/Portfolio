@@ -29,20 +29,27 @@
 
         <div class=spacer>
             <div class="welcome-container">
-                <h1>Welcome to my website!</h1>
+                <h1 id="welcome-header">Welcome to my website!</h1>
+                <h2>Use these to quickly navigate my profiles.</h2>
                 <figure class="welcome-image">
-                    <img src="https://placehold.co/250x280">
-                    <figcaption>Github</figcaption>
+                    <a target="_blank" href="https://github.com/sjok101">
+                        <img src="/img/github_logo.png" width="250vh">
+                        <figcaption>Github</figcaption>
+                    </a>
                 </figure>
                 <figure class="welcome-image">
-                    <img src="https://placehold.co/250x280">
-                    <figcaption>LinkedIn</figcaption>
+                    <a target="_blank" href="https://www.linkedin.com/in/basil-ok/">
+                        <img src="/img/linkedin_logo.png" width="250vh">
+                        <figcaption>LinkedIn</figcaption>
+                    </a>
                 </figure>
                 <figure class="welcome-image">
-                    <img src="https://placehold.co/250x280">
-                    <figcaption>Resume</figcaption>
+                    <a target="_blank" href="/img/BOK-Resume-240206.pdf">
+                        <img src="/img/resume_logo.png" width="250vh">
+                        <figcaption>Resume</figcaption>
+                    </a>
                 </figure>
-                <h2>Sroll down to view my portfolio!</h2>
+                <h3>Scroll down to view my portfolio!</h3>
             </div>
         </div>
 
@@ -76,42 +83,46 @@
                 <h2>Projects</h2>
                 <h3>Take a look at some of the projects I've been working on!</h3>
                 <figure class="project-image">
+                    <a target="_blank" href="https://github.com/sjok101/text-based-battler">
+                        <img src="/img/project1.png" id="project1">
+                    </a>
+                    <figcaption>Description:
 
-                    <img src="https://placehold.co/200x300" id="project1">
-                    <figcaption><a target="_blank" href="https://github.com/sjok101/text-based-battler">Text-Based
-                            Battler (React
-                            Webapp Game)</a></figcaption>
+                    </figcaption>
                 </figure>
                 <figure class="project-image">
-
-                    <img src="https://placehold.co/200x300" id="project2">
-                    <figcaption><a target="_blank" href="https://github.com/sjok101/mySudokuGame">Sudoku Webapp
-                            Game</a>
+                    <a target="_blank" href="https://github.com/sjok101/mySudokuGame">
+                        <img src="/img/project2.png" id="project2">
+                    </a>
+                    <figcaption>Description:
                     </figcaption>
-
                 </figure>
             </div>
         </section>
 
         <section id="contact-section" class="main-section">
             <div class="contact-container">
-                <form>
+                <form id="messageForm" action="/send-message" method="POST">
                     <table>
                         <tr>
-                            <td><input type="text" id="requester" name="requester" placeholder="Your Name"></td>
-                            <td rowspan="3"><textarea id="request" name="request" rows="6"
-                                    cols="50">Your Message</textarea>
+                            <td><label for="name"><input type="text" id="name" name="name"
+                                        placeholder="Your Name"></label></td>
+                            <td rowspan="3"><label for="message"><textarea id="message" name="message" rows="6"
+                                        cols="50">Your Message</textarea></label>
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="text" id="requesterPhone" name="requesterPhone" placeholder="Your Phone">
+                            <td><label for="phone"><input type="text" id="phone" name="phone"
+                                        placeholder="Your Phone"></label>
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="text" id="requesterEmail" name="requesterEmail" placeholder="Your Email">
+                            <td><label for="email"><input type="text" id="email" name="email"
+                                        placeholder="Your Email"></label>
                             </td>
                         </tr>
                     </table>
+                    <input type="submit" id="submit" form="messageForm">
                 </form>
             </div>
         </section>
@@ -128,8 +139,11 @@
             </address>
         </footer>
 
-
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="/js/index.js">
+        </script>
     </main>
+
 </body>
 
 </html>

@@ -58,7 +58,7 @@
 .project-image ,.welcome-image{
     display:inline-block;
     margin: auto;
-    padding: 15px;
+    padding: 25px;
 }
 
 .spacer{
@@ -71,9 +71,12 @@
     position: relative;
     margin: auto;
     width: 85%;
-    height: 50vh;
     border: 1px solid black;
-    background-color: aliceblue;
+    background-color: whitesmoke;
+}
+
+#welcome-header{
+    padding:10px;
 }
 
 html {

@@ -7,7 +7,7 @@ const Profile = require("./public/models/profile");
 
 var app = express();
 mongoose.connect(
-  "mongodb+srv://bok:b4mXTTHRcJJRQXIP@portfolio.ac3y6nr.mongodb.net/portfolio"
+  "mongourl"
 );
 //add further logic for mongoose connection
 const db = mongoose.connection;
